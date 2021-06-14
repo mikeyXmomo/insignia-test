@@ -7,7 +7,7 @@ This Projects requires [Node.js](https://nodejs.org/) v12+ to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd insignia-be
+cd Insignia-BE
 npm i
 npm start
 ```
@@ -27,12 +27,9 @@ This Projects requires [Node.js](https://nodejs.org/) v12+ to run.
 Install the dependencies and devDependencies and start the server.
 
 ```sh
-cd insignia-fe
+cd Insignia-FE
 npm i
 npm start
-touch .env
-Create 'REACT_APP_URL'='http://localhost:8000' in .env files
-Change the port in .env if you using another port of Backend API
 ```
 
 Using PORT 3000
