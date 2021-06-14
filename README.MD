@@ -18,7 +18,7 @@ API LIST
 | method  | API  | function  |
 |---|---|---|
 | GET  | /orders  | Get All Orders  |
-| POST  | /order/create  | Create Orders  |
+| POST  | /order/create  | Create Order  |
 
 ## Installation Front End
 
@@ -31,7 +31,7 @@ cd insignia-fe
 npm i
 npm start
 touch .env
-Create 'REACT_APP_URL'='http://localhost:8000'
-Change the port if you using another port
+Create 'REACT_APP_URL'='http://localhost:8000' in .env files
+Change the port in .env if you using another port of Backend API
 ```
 Using PORT 3000
