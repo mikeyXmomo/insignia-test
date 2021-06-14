@@ -1,9 +1,7 @@
-import { Order } from "../Schema/Order.schema";
-import { v4 as uuidv4 } from "uuid";
+const { Order } = require("../Schema/Order.schema");
+const { v4: uuidv4 } = require("uuid");
 
-const orderController = {};
-
-orderController.getAll = async (req, res) => {
+exports.getAll = async (req, res) => {
   try {
     const allOrder = await Order.find().sort({ createdAt: -1 }).exec();
     return res.status(200).json({ data: allOrder });
@@ -12,7 +10,7 @@ orderController.getAll = async (req, res) => {
   }
 };
 
-orderController.create = async (req, res) => {
+exports.create = async (req, res) => {
   const { invoiceNumber, email, paymentStatus, fulfillmentStatus, total } =
     req.body;
   try {
@@ -35,5 +33,3 @@ orderController.create = async (req, res) => {
     return res.status(500).send({ data: error });
   }
 };
-
-export default orderController;

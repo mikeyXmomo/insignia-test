@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const orderSchema = mongoose.Schema({
   id: {
     type: String,
@@ -32,4 +32,4 @@ const orderSchema = mongoose.Schema({
   },
 });
 
-export const Order = mongoose.model("order", orderSchema);
+exports.Order = mongoose.model("order", orderSchema);

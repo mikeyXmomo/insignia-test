@@ -1,12 +1,10 @@
 {
-  "name": "express-course",
+  "name": "express-mongoose",
   "version": "1.0.0",
-  "description": "Express Refactory Course",
+  "description": "Express Mongoose",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec npm run babel-node -- ./index.js",
-    "babel-node": "babel-node --presets=@babel/preset-env",
-    "build": "babel ** --out-file index-compiled.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "license": "MIT",
   "dependencies": {
@@ -18,6 +16,7 @@
     "mongodb": "^3.6.4",
     "mongoose": "^5.11.16",
     "nodemon": "^2.0.7",
+    "pm2": "^5.1.0",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
