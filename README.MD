@@ -34,4 +34,12 @@ touch .env
 Create 'REACT_APP_URL'='http://localhost:8000' in .env files
 Change the port in .env if you using another port of Backend API
 ```
+
 Using PORT 3000
+
+## Live URL
+Frontend
+https://insignia-test.vercel.app/
+
+Backend
+https://insignia-test.herokuapp.com/
