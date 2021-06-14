@@ -21,4 +21,6 @@ mongoose.connect(uri, {
 
 app.use(orderRouter);
 
-app.listen(8000, () => console.log("🚀 Server Started on Port 8000"));
+app.listen(process.env.PORT || 8000, () =>
+  console.log(`🚀 Server Started on Port ${process.env.PORT}`)
+);
