@@ -18,7 +18,7 @@ API LIST
 | method  | API  | function  |
 |---|---|---|
 | GET  | /orders  | Get All Orders  |
-| POST  | /orders/create  | Create Orders  |
+| POST  | /order/create  | Create Orders  |
 
 ## Installation Front End
 
@@ -30,5 +30,8 @@ Install the dependencies and devDependencies and start the server.
 cd insignia-fe
 npm i
 npm start
+touch .env
+Create 'REACT_APP_URL'='http://localhost:8000'
+Change the port if you using another port
 ```
 Using PORT 3000
