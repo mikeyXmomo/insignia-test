@@ -16,8 +16,10 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { useQueryClient, useMutation } from "react-query";
 import { useSnackbar } from "notistack";
 
+const invoiceNumberGenerator = Math.floor(10000 + Math.random() * 90000);
+
 const initialOrder = {
-  invoiceNumber: "",
+  invoiceNumber: invoiceNumberGenerator,
   email: "",
   paymentStatus: "",
   fulfillmentStatus: "",
